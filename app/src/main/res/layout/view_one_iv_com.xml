@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gmy.blog.widget.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_content_bg"
+    android:orientation="vertical"
+    ripple:rv_type="rectangle" >
+
+    <ImageView
+        android:id="@+id/iv_one"
+        android:layout_width="wrap_content"
+        android:layout_height="120dip"
+        android:layout_margin="3dp"
+        android:clickable="false"
+        android:contentDescription="@null"
+        android:duplicateParentState="true"
+        android:maxHeight="110dp"
+        android:maxWidth="120dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/iv_two"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:clickable="false"
+        android:contentDescription="@null"
+        android:duplicateParentState="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/have_video" />
+
+</com.gmy.blog.widget.RippleView>

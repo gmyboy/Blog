@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/about_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_top" >
+
+        <Button
+            android:id="@+id/about_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/btn_back2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="关于"
+            android:textColor="#000000"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/about_layout_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_layout_topbar"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dip"
+            android:text="微博"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.gmy.blog.widget.LobsterTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dip"
+            android:text="version 1.0"
+            android:textColor="@color/btn_exit"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/comm_card_top_bg"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/Setting_text"
+                android:text="@string/about_pingfen" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:id="@+id/about_guanfang"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/comm_card_middle_bg"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/Setting_text"
+                android:text="@string/about_guanfang" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/comm_card_middle_bg"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/Setting_text"
+                android:text="@string/about_problem" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/comm_card_bottom_bg"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/Setting_text"
+                android:text="@string/about_gengxin" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dip" >
+
+        <com.gmy.blog.widget.LobsterTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/support"
+            android:textSize="11sp" />
+
+        <com.gmy.blog.widget.LobsterTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_gravity="center"
+            android:text="@string/copyright"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</RelativeLayout>

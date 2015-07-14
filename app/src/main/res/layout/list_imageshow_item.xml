@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/full_image_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff000000" >
+
+    <ImageView
+        android:id="@+id/full_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#ffeeeeee"
+        android:textSize="12.0sp" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/full_image_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/ic_full_image_failed"
+        android:gravity="center"
+        android:text="加载失败，点击重新加载"
+        android:textColor="#ffeeeeee"
+        android:textSize="12.0sp" />
+
+</RelativeLayout>

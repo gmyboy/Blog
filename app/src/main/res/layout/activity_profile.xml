@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rlDigest1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlNick"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/profile_layout_height"
+            android:background="@drawable/comm_card_top_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tvNick"
+                style="@style/PROFILE_TXT_LEFT"
+                android:text="昵称" />
+
+            <ImageView
+                android:id="@+id/iv_pro_arrow1"
+                style="@style/PROFILE_IMG_ARROW" />
+
+            <TextView
+                android:id="@+id/tvNick_content"
+                style="@style/PROFILE_TXT_CENTER"
+                android:layout_toLeftOf="@+id/iv_pro_arrow1" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:id="@+id/rlSex"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/profile_layout_height"
+            android:background="@drawable/comm_card_middle_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tvAccount_sex"
+                style="@style/PROFILE_TXT_LEFT"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/tvAccount_sex_content"
+                style="@style/PROFILE_TXT_CENTER"
+                android:layout_toLeftOf="@+id/iv_pro_arrow2" />
+
+            <ImageView
+                android:id="@+id/iv_pro_arrow2"
+                style="@style/PROFILE_IMG_ARROW" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:id="@+id/rlIntro"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/profile_layout_height"
+            android:background="@drawable/comm_card_bottom_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tvAccount_introduce"
+                style="@style/PROFILE_TXT_LEFT"
+                android:text="简介" />
+
+            <TextView
+                android:id="@+id/tvAccount_introduce_content"
+                style="@style/PROFILE_TXT_CENTER"
+                android:layout_toLeftOf="@+id/iv_pro_arrow3" />
+
+            <ImageView
+                android:id="@+id/iv_pro_arrow3"
+                style="@style/PROFILE_IMG_ARROW" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rllocation"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/profile_layout_height"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/comm_card_top_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tvlocation"
+                style="@style/PROFILE_TXT_LEFT"
+                android:text="所在地" />
+
+            <TextView
+                android:id="@+id/tvlocation_content"
+                style="@style/PROFILE_TXT_CENTER"
+                android:layout_toLeftOf="@+id/iv_pro_arrow4" />
+
+            <ImageView
+                android:id="@+id/iv_pro_arrow4"
+                style="@style/PROFILE_IMG_ARROW" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:id="@+id/rlhobby"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/profile_layout_height"
+            android:background="@drawable/comm_card_middle_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tvAccount_hobby"
+                style="@style/PROFILE_TXT_LEFT"
+                android:text="爱好" />
+
+            <TextView
+                android:id="@+id/tvAccount_hobby_content"
+                style="@style/PROFILE_TXT_CENTER"
+                android:layout_toLeftOf="@+id/iv_pro_arrow5" />
+
+            <ImageView
+                android:id="@+id/iv_pro_arrow5"
+                style="@style/PROFILE_IMG_ARROW" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:id="@+id/rlbirthday"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/profile_layout_height"
+            android:background="@drawable/comm_card_middle_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tvAccount_birthday"
+                style="@style/PROFILE_TXT_LEFT"
+                android:text="出生日期" />
+
+            <TextView
+                android:id="@+id/tvAccount_birthday_content"
+                style="@style/PROFILE_TXT_CENTER"
+                android:layout_toLeftOf="@+id/iv_pro_arrow6" />
+
+            <ImageView
+                android:id="@+id/iv_pro_arrow6"
+                style="@style/PROFILE_IMG_ARROW" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:id="@+id/rlregisdate"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/profile_layout_height"
+            android:background="@drawable/comm_card_bottom_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tvAccount_regisdate"
+                style="@style/PROFILE_TXT_LEFT"
+                android:text="注册时间" />
+
+            <TextView
+                android:id="@+id/tvAccount_regisdate_content"
+                style="@style/PROFILE_TXT_CENTER"
+                android:layout_toLeftOf="@+id/iv_pro_arrow7" />
+
+            <ImageView
+                android:id="@+id/iv_pro_arrow7"
+                style="@style/PROFILE_IMG_ARROW" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:id="@+id/rlpwd"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/profile_layout_height"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/comm_card_bottom_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tvAccount_pwd"
+                style="@style/PROFILE_TXT_LEFT"
+                android:text="修改密码" />
+
+            <ImageView
+                android:id="@+id/iv_common_icon_arrow8"
+                style="@style/PROFILE_IMG_ARROW" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pro_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/main_top" >
+
+        <Button
+            android:id="@+id/pro_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/btn_back2" />
+
+        <TextView
+            android:id="@+id/pro_toptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="完善个人信息"
+            android:textColor="#000000"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/pro_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:text="提交"
+            android:textColor="@color/frag_me_title_txt"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</FrameLayout>

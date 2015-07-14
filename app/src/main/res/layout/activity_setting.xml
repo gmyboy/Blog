@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/set_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/main_top" >
+
+        <Button
+            android:id="@+id/set_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/btn_back2" />
+
+        <TextView
+            android:id="@+id/text_toptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#000000"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/set_account"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/comm_card_bg"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/Setting_text"
+                android:text="@string/setting_account" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/set_scale"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/comm_card_top_bg"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/Setting_text"
+                android:text="@string/setting_scale" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:id="@+id/set_music"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/comm_card_bottom_bg"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/Setting_text"
+                android:text="@string/setting_music" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/set_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/comm_card_top_bg"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/Setting_text"
+                android:text="@string/setting_feedback" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:id="@+id/set_about"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/comm_card_bottom_bg"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/Setting_text"
+                android:text="@string/setting_about" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/set_light"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/comm_card_top_bg"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/Setting_text"
+                android:text="@string/setting_light" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:id="@+id/set_cache"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/comm_card_bottom_bg"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/Setting_text"
+                android:text="@string/setting_cache" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/set_btn_exit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_btn_height"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/comm_card_bottom_bg"
+            android:text="@string/setting_exit"
+            android:textColor="@color/btn_exit" />
+    </LinearLayout>
+
+</LinearLayout>

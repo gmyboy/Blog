@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/se_layout_topbar"
+        android:layout_width="fill_parent"
+       android:layout_height="50dip"
+        android:background="@drawable/main_top" >
+
+        <Button
+            android:id="@+id/se_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/btn_back2" />
+
+        <TextView
+            android:id="@+id/se_text_toptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我关注的好友"
+            android:textColor="#000000"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/se_search_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12.0dip"
+            android:background="@drawable/home_right_btn_bg"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/se_lay_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/se_layout_topbar"
+        android:background="#ffe3e3e3"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/se_list_header_edt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="9dip"
+            android:layout_marginBottom="9dip"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/btn_search2"
+            android:hint="  输入要查询的名字" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/se_blog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_below="@+id/se_lay_middle"
+        android:dividerHeight="10dip" >
+    </ListView>
+
+</RelativeLayout>

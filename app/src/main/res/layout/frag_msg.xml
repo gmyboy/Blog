@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical" >
+
+    <com.gmy.blog.widget.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/msg_pullview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dip" />
+
+    <RelativeLayout
+        android:id="@+id/msg_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/main_top" >
+
+        <TextView
+            android:id="@+id/msg_toptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="#000000"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/msg_start_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:text="发起聊天"
+            android:textColor="@color/frag_me_title_txt"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dip"
+        android:fillViewport="false" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.gmy.blog.widget.AutoScrollViewPager
+                android:id="@+id/found_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="103dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/comm_card_bg" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="90dip"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/common_card_background"
+                android:clickable="false"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="45dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/list_content_bg"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="7dip"
+                        android:text="#一拍即出彩#"
+                        android:textColor="#ff545454"
+                        android:textSize="16sp" />
+
+                    <View style="@style/StyleLine_vertical" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="45dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/list_content_bg"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="7dip"
+                        android:text="#高考冲刺#"
+                        android:textColor="#ff545454"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View style="@style/Style_Line_Ver" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="45dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/list_content_bg"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="7dip"
+                        android:text="#你好夏天#"
+                        android:textColor="#ff545454"
+                        android:textSize="16sp" />
+
+                    <View style="@style/StyleLine_vertical" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="45dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/list_content_bg"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="7dip"
+                        android:text="#热门话题#"
+                        android:textColor="#ff545454"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/me_lay_perfect"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/comm_card_top_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/me_perfact_userinfo_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/my_perfect_userinfo" />
+
+                <TextView
+                    android:id="@+id/me_text_perfect_userinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/me_perfact_userinfo_img"
+                    android:singleLine="true"
+                    android:text="热门微博"
+                    android:textColor="#ff545454"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/me_btn_goto_setting2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/common_icon_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View style="@style/Style_Line_Ver" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/comm_card_bottom_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/found_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/my1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/found_img1"
+                    android:singleLine="true"
+                    android:text="找人"
+                    android:textColor="#ff545454"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/common_icon_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/comm_card_top_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/found_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/my2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/found_img2"
+                    android:singleLine="true"
+                    android:text="随手拍"
+                    android:textColor="#ff545454"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/common_icon_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View style="@style/Style_Line_Ver" />
+
+            <RelativeLayout
+                android:id="@+id/me_lay_rank"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/comm_card_middle_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/found_img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/my3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/found_img3"
+                    android:singleLine="true"
+                    android:text="游戏中心"
+                    android:textColor="#ff545454"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/common_icon_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View style="@style/Style_Line_Ver" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:background="@drawable/comm_card_bottom_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/found_img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/my4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/found_img4"
+                    android:singleLine="true"
+                    android:text="周边"
+                    android:textColor="#ff545454"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/common_icon_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/comm_card_top_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/found_img5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/my5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/found_img5"
+                    android:singleLine="true"
+                    android:text="购物"
+                    android:textColor="#ff545454"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/common_icon_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View style="@style/Style_Line_Ver" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/comm_card_middle_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/found_img6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/my6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/found_img6"
+                    android:singleLine="true"
+                    android:text="微招聘"
+                    android:textColor="#ff545454"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/common_icon_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View style="@style/Style_Line_Ver" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/comm_card_middle_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/found_img7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/my3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/found_img7"
+                    android:singleLine="true"
+                    android:text="电影"
+                    android:textColor="#ff545454"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/common_icon_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View style="@style/Style_Line_Ver" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/comm_card_middle_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/found_img8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/my1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/found_img8"
+                    android:singleLine="true"
+                    android:text="听歌"
+                    android:textColor="#ff545454"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/common_icon_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View style="@style/Style_Line_Ver" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/comm_card_middle_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/found_img9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/my5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/found_img9"
+                    android:singleLine="true"
+                    android:text="微公益"
+                    android:textColor="#ff545454"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/common_icon_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View style="@style/Style_Line_Ver" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/comm_card_bottom_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/found_img10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/my4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/found_img10"
+                    android:singleLine="true"
+                    android:text="更多频道"
+                    android:textColor="#ff545454"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/common_icon_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/fid_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/main_top" >
+
+        <EditText
+            android:id="@+id/fid_toptitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_toLeftOf="@+id/fid_voice"
+            android:background="@drawable/messages_textview_background"
+            android:drawableLeft="@drawable/searchbar_searchlist_search_icon"
+            android:drawablePadding="5dip"
+            android:gravity="left|center_vertical"
+            android:hint="大家都在搜: 微博写书"
+            android:padding="5dip"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/fid_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:background="@drawable/btn_voice" />
+    </RelativeLayout>
+
+</FrameLayout>

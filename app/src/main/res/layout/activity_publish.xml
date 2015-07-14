@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/send_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/main_top" >
+
+        <Button
+            android:id="@+id/send_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/btn_back2" />
+
+        <TextView
+            android:id="@+id/send_text_toptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="发送微博"
+            android:textColor="#000000"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/send_text_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:text="发送"
+            android:textColor="@color/grey"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/det_scroll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:focusable="true"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dip" >
+
+                    <com.gmy.blog.widget.EmoticonsEditText
+                        android:id="@+id/send_article_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="2dip"
+                        android:paddingTop="4dip"
+                        android:background="@null"
+                        android:gravity="left|top"
+                        android:hint="分享新鲜事..."
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/rl_layout"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginRight="10dip"
+                    android:text="140字"
+                    android:textColor="#d4d4d4" />
+
+                <View
+                    android:id="@+id/line"
+                    style="@style/Style_Line_Ver"
+                    android:layout_below="@+id/tv_count"
+                    android:layout_margin="2dp" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/line"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="2dip"
+                    android:text="位置"
+                    android:drawableLeft="@drawable/activity_card_locate"
+                    android:drawablePadding="3dip"
+                    android:textColor="#000023"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/line2"
+                    style="@style/Style_Line_Ver"
+                    android:layout_below="@+id/tv_location"
+                    android:layout_margin="2dp" />
+            </RelativeLayout>
+
+            <com.gmy.blog.widget.ScrollGridView
+                android:id="@+id/picture_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dip"
+                android:columnWidth="100dp"
+                android:horizontalSpacing="10.0dip"
+                android:numColumns="4"
+                android:scaleType="centerInside"
+                android:verticalSpacing="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View style="@style/Style_Line_Ver" />
+
+    <include layout="@layout/include_chat_bottom_bar" />
+
+</LinearLayout>

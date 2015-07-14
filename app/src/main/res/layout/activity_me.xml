@@ -1,0 +1,196 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/me_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.gmy.blog.widget.KenBurnsView
+                    android:id="@+id/header_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="235dip"
+                    android:src="@drawable/back" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="235dip"
+                    android:background="@drawable/back"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dip" >
+
+                    <com.gmy.blog.widget.CircularImage
+                        android:id="@+id/avator"
+                        android:layout_width="80dip"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="75dip"
+                        android:src="@drawable/userinfo_shadow_round" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/me_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="古明勇"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:id="@+id/me_touxian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/userinfo_icon_male" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/me_attention"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="关注 67"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+
+                        <View
+                            style="@style/seperator_layout_vertical"
+                            android:layout_marginLeft="8dip"
+                            android:layout_marginRight="8dip" />
+
+                        <TextView
+                            android:id="@+id/me_fans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="粉丝 42"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/me_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="简介: 程序员 悲催"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/me_btn_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_message"
+                    android:drawableLeft="@drawable/userinfo_relationship_indicator_edit"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="编辑资料" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/view_price1"
+                layout="@layout/view_me" >
+            </include>
+
+            <com.gmy.blog.widget.ScrollListView
+                android:id="@+id/blogme_article"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10dip"
+                android:focusable="false"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#22000000" >
+
+        <Button
+            android:id="@+id/set_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/txt_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="古明勇"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/set_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dip"
+            android:layout_toLeftOf="@+id/set_more"
+            android:background="@drawable/btn_search" />
+
+        <Button
+            android:id="@+id/set_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/btn_more" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/view_price2"
+        layout="@layout/view_me_l"
+        android:visibility="invisible" >
+    </include>
+
+</FrameLayout>

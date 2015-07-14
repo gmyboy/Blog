@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/reg_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/main_top" >
+
+        <Button
+            android:id="@+id/reg_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/btn_back2" />
+
+        <TextView
+            android:id="@+id/reg_text_toptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="#000000"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/reg_layout_reg_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34.0dip"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/comment_edit_height"
+            android:layout_marginTop="6.0dip" >
+
+            <EditText
+                android:id="@+id/reg_edt_username"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:background="@null"
+                android:hint="用户名"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/comment_edit_height" >
+
+            <EditText
+                android:id="@+id/reg_edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dip"
+                android:background="@null"
+                android:hint="密码"
+                android:imeOptions="actionNext"
+                android:password="true"
+                android:singleLine="true"
+                android:textScaleX="1.0"
+                android:textSize="13.0sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/comment_edit_height" >
+
+            <EditText
+                android:id="@+id/reg_edit_mail"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:background="@null"
+                android:hint="邮箱"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reg_layout_check"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginTop="10dp" >
+
+        <CheckBox
+            android:id="@+id/reg_cbox_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="#ff8b8b8b"
+            android:textSize="13.0sp" />
+
+        <TextView
+            android:id="@+id/reg_text_reg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="用户协议"
+            android:textColor="#ffd21927"
+            android:textSize="13.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53.0dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/reg_btn_finish"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/comment_edit_height"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_regist_bg"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:textSize="14.0sp" />
+
+        <Button
+            android:id="@+id/reg_btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/comment_edit_height"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_regist_bg"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

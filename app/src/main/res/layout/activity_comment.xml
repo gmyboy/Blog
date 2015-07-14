@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dip"
+        android:layout_gravity="bottom|center_horizontal" >
+
+        <ListView
+            android:id="@+id/comm_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/comm_layout_bottom_no" />
+
+        <TextView
+            android:id="@+id/comm_txtPageNoData"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="还没有评论"
+            android:textColor="#ffb1b1b0"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/comm_layout_bottom_no"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/comm_text_hint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_weight="1.0"
+                android:gravity="left|center"
+                android:padding="6dp"
+                android:text="评论一下吧"
+                android:textColor="#acacac"
+                android:textSize="13.0sp" />
+
+            <Button
+                android:id="@+id/comm_btn_send_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="14.0dip"
+                android:layout_marginRight="20.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comm_layout_bottom_yes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/comm_edit_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_weight="1.0"
+                android:hint="发表评论"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textSize="13.0sp" />
+
+            <Button
+                android:id="@+id/comm_btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="14.0dip"
+                android:layout_marginRight="20.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/comm_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/main_top" >
+
+        <Button
+            android:id="@+id/comm_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/btn_back2" />
+
+        <TextView
+            android:id="@+id/comm_text_toptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="评论"
+            android:textColor="#000000"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+</FrameLayout>

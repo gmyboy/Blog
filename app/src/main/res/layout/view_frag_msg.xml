@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/msg_lay_at"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:background="@drawable/comm_card_top_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/msg_at_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@null"
+                android:src="@drawable/messagescenter_at" />
+
+            <TextView
+                android:id="@+id/msg_text_perfect_userinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:layout_toRightOf="@+id/msg_at_img"
+                android:singleLine="true"
+                android:text="at我"
+                android:textColor="#ff545454"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15.0dip"
+                android:background="@drawable/common_icon_arrow" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:id="@+id/msg_lay_comm"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:background="@drawable/comm_card_middle_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/msg_comm_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@null"
+                android:src="@drawable/messagescenter_comments" />
+
+            <TextView
+                android:id="@+id/msg_text_comm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:layout_toRightOf="@+id/msg_comm_img"
+                android:singleLine="true"
+                android:text="评论"
+                android:textColor="#ff545454"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15.0dip"
+                android:background="@drawable/common_icon_arrow" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:id="@+id/msg_lay_zan"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:background="@drawable/comm_card_middle_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/msg_zan_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@null"
+                android:src="@drawable/messagescenter_good" />
+
+            <TextView
+                android:id="@+id/msg_text_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:layout_toRightOf="@+id/msg_zan_img"
+                android:singleLine="true"
+                android:text="赞"
+                android:textColor="#ff545454"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15.0dip"
+                android:background="@drawable/common_icon_arrow" />
+        </RelativeLayout>
+
+        <View style="@style/Style_Line_Ver" />
+
+        <RelativeLayout
+            android:id="@+id/msg_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:background="@drawable/comm_card_middle_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/msg_msg_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@null"
+                android:src="@drawable/messagescenter_messagebox" />
+
+            <TextView
+                android:id="@+id/msg_text_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:layout_toRightOf="@+id/msg_msg_img"
+                android:singleLine="true"
+                android:text="未关注人私信"
+                android:textColor="#ff545454"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15.0dip"
+                android:background="@drawable/common_icon_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

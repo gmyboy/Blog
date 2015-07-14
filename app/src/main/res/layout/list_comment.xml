@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip" >
+
+            <com.gmy.blog.widget.CircularImage
+                android:id="@+id/img_avatar"
+                android:layout_width="55dip"
+                android:layout_height="55dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dip"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/text_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_avatar"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dip"
+                android:layout_toRightOf="@+id/img_avatar"
+                android:gravity="center"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/text_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_avatar"
+                android:layout_below="@+id/text_username"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="50dip"
+                android:layout_toRightOf="@+id/img_avatar"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLength="35"
+                android:maxLines="2" />
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_avatar"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/text_username"
+                android:layout_marginRight="13dip"
+                android:gravity="bottom|right"
+                android:textColor="#acacac" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

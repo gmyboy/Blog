@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="comment_edit_height">42dp</dimen>
+    <dimen name="comment_btn_height">45dp</dimen>
+    <dimen name="common_height">50dip</dimen>
+
+    <!-- 下拉刷新字体 -->
+    <dimen name="picture_pull_to_refresh_loading_text_size">14dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_text_size">10dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_top_margin">6dp</dimen>
+    <dimen name="picture_pull_to_refresh_footer_height">40dp</dimen>
+    <!-- profile -->
+    <dimen name="profile_text_left">10dip</dimen>
+    <dimen name="profile_center_text_right">10dip</dimen>
+    <dimen name="profile_img_right">18dip</dimen>
+    <dimen name="profile_layout_height">45dip</dimen>
+    <!-- element -->
+
+    <dimen name="titlestrip_height">32dp</dimen>
+    <dimen name="titlestrip_text_size">16sp</dimen>
+    <dimen name="tweet_author_text_size">16sp</dimen>
+    <dimen name="tweet_message_text_size">16sp</dimen>
+    <dimen name="tweet_padding">10dp</dimen>
+    <dimen name="tweet_content_margin">10dp</dimen>
+    <dimen name="tweet_icon_margin">40dp</dimen>
+    <dimen name="tweet_profile_image_size">60dp</dimen>
+    <dimen name="tweet_post_image_height">130dp</dimen>
+    <dimen name="tweet_icon_image_size">20dp</dimen>
+
+</resources>

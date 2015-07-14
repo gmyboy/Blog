@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffe3e3e3"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/view_att_list_header_edt"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="9dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/btn_search2"
+        android:hint="  输入要查询好友的名字" />
+
+</LinearLayout>

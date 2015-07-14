@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="42dip"
+        android:layout_marginTop="49dip"
+        android:background="@drawable/comm_card_bg" >
+
+        <ListView
+            android:id="@+id/de_comm_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view_detail" />
+
+        <TextView
+            android:id="@+id/de_comm_txtPageNoData"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:layout_below="@+id/view_detail"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="还没有评论"
+            android:textColor="#ffb1b1b0"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/de_first_lay_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="43dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/main_top"
+        android:orientation="vertical" >
+
+        <View style="@style/Style_Line_Ver" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/de_first_lay_bottom1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/list_content_bg"
+                android:clickable="true"
+                android:duplicateParentState="false"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/de_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/statusdetail_icon_retweet"
+                    android:clickable="false"
+                    android:contentDescription="@null"
+                    android:focusable="false" />
+
+                <TextView
+                    android:id="@+id/de_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="@string/action_tweet"
+                    android:textColor="#ff919192" />
+            </LinearLayout>
+
+            <View style="@style/StyleLine_vertical_30" />
+
+            <LinearLayout
+                android:id="@+id/de_first_lay_bottom2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/list_content_bg"
+                android:clickable="true"
+                android:duplicateParentState="false"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/de_btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/statusdetail_icon_comment"
+                    android:clickable="false"
+                    android:contentDescription="@null"
+                    android:focusable="false" />
+
+                <TextView
+                    android:id="@+id/de_txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="@string/action_comment"
+                    android:textColor="#ff919192" />
+            </LinearLayout>
+
+            <View style="@style/StyleLine_vertical_30" />
+
+            <LinearLayout
+                android:id="@+id/de_first_lay_bottom3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/list_content_bg"
+                android:clickable="true"
+                android:duplicateParentState="false"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/de_btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/statusdetail_icon_like"
+                    android:clickable="false"
+                    android:contentDescription="@null"
+                    android:focusable="false" />
+
+                <TextView
+                    android:id="@+id/de_txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="@string/action_zan"
+                    android:textColor="#ff919192" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/view_detail_l"
+        layout="@layout/view_detail_l"
+        android:visibility="gone" >
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/de_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/main_top" >
+
+        <Button
+            android:id="@+id/de_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/btn_back2" />
+
+        <TextView
+            android:id="@+id/de_text_toptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="微博正文"
+            android:textColor="#000000"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/btn_detail_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12.0dip"
+            android:background="@drawable/btn_more2"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</FrameLayout>

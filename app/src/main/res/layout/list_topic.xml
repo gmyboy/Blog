@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/comm_card_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/list_topic_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/topic_userphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/topic_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/defaulthead" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/topic_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/topic_userphoto"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/topic_userphoto"
+            android:text="gmyboy"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/topic_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic_author"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="8dip"
+            android:layout_toRightOf="@+id/topic_userphoto"
+            android:singleLine="true"
+            android:text="程序员  悲剧"
+            android:textColor="@color/list_date_txt"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/topic_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dip"
+            android:clickable="true"
+            android:focusable="false"
+            android:textSize="13sp"
+            android:text="#话题" />
+    </RelativeLayout>
+
+</RelativeLayout>

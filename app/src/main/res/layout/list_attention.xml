@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/comm_card_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/list_att_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/att_userphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center_horizontal" >
+
+            <com.gmy.blog.widget.CircularImage
+                android:id="@+id/att_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/defaulthead" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/att_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/att_userphoto"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/att_userphoto"
+            android:text="gmyboy"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/att_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/att_author"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="4dip"
+            android:layout_toRightOf="@+id/att_userphoto"
+            android:text="程序员  悲剧"
+            android:textColor="@color/list_date_txt"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/att_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:clickable="true"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/list_att_list1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@+id/list_att_top"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginRight="1.0dip"
+        android:layout_marginTop="2dip"
+        android:background="#ffe3e3e3"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

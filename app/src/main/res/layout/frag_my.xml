@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:background="@color/main_color"
+    android:orientation="vertical" >
+
+    <com.gmy.blog.widget.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/me_pullview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dip" >
+    </com.gmy.blog.widget.pulltorefresh.PullToRefreshScrollView>
+
+    <RelativeLayout
+        android:id="@+id/det_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/main_top" >
+
+        <TextView
+            android:id="@+id/add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:text="添加好友"
+            android:textColor="@color/frag_me_title_txt"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_toptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="#000000"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/me_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:text="设置"
+            android:textColor="@color/frag_me_title_txt"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</FrameLayout>

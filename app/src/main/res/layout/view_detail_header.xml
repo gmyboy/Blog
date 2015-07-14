@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comm_card_bg"
+        android:paddingBottom="8dip"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip" >
+
+        <RelativeLayout
+            android:id="@+id/content_lay_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+
+            <com.gmy.blog.widget.CircularImage
+                android:id="@+id/de_userphoto"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:layout_marginTop="3dip"
+                android:src="@drawable/defaulthead" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:layout_toRightOf="@+id/de_userphoto"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/de_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gmyboy"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/de_name_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dip"
+                    android:text="2015-04-03  来自digiwork"
+                    android:textColor="@color/blog_detail_name"
+                    android:textSize="11sp" >
+                </TextView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/de_btn_collect"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:background="@drawable/btn_detail_collect"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <com.gmy.blog.widget.EmoticonsTextView
+            android:id="@+id/de_first_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content_lay_top"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:lineSpacingMultiplier="1.4"
+            android:text="    肯尼亚致147死恐袭：官方事前警示 被当愚人节玩笑,不会吧？！iPhone 7竟然是这样,河南南阳民间金融与地产乱象调查：房地产面临崩盘"
+            android:textScaleX="1"
+            android:textSize="15sp" />
+
+        <com.gmy.blog.widget.ScrollGridView
+            android:id="@+id/de_gv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/de_first_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="7dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/view_detail"
+        layout="@layout/view_detail" >
+    </include>
+
+</LinearLayout>

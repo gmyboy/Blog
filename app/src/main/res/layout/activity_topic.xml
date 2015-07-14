@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topic_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical" >
+
+    <com.gmy.blog.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/topic_pullview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dip" />
+
+    <RelativeLayout
+        android:id="@+id/topic_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/main_top" >
+
+        <EditText
+            android:id="@+id/topic_toptitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_toLeftOf="@+id/topic_cancel"
+            android:background="@drawable/messages_textview_background"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/searchbar_textfield_topic_icon"
+            android:drawablePadding="5dip"
+            android:hint="话题、电影、书、歌曲"
+            android:padding="5dip"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/topic_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+</FrameLayout>
