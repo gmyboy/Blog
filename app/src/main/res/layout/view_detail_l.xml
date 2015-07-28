@@ -4,7 +4,7 @@
     android:layout_height="45dp"
     android:layout_alignParentTop="true"
     android:layout_marginTop="49dip"
-    android:background="@drawable/userinfo_tab_background"
+    android:background="#ffffff"
     android:orientation="vertical" >
 
     <ImageView

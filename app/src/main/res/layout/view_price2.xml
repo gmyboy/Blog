@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="50dip"
     android:layout_marginTop="50dip"
-    android:background="@drawable/userinfo_tab_background"
+    android:background="#000000"
     android:orientation="horizontal" >
 <!--   <android.support.v4.app.FragmentTabHost
         android:id="@android:id/tabhost"

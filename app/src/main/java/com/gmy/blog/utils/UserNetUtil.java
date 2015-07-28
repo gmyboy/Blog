@@ -22,8 +22,10 @@ import org.json.JSONObject;
 import com.gmy.blog.entity.UserBean;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.squareup.okhttp.OkHttpClient;
 
 public class UserNetUtil {
+	OkHttpClient client = new OkHttpClient();
 	/**
 	 * 获取热门用户列表
 	 * 

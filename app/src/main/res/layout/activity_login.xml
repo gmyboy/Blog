@@ -6,7 +6,7 @@
     android:fitsSystemWindows="true" >
 
     <ImageView
-        android:id="@+id/iv_login_icon"
+        android:id="@+id/ivLogin"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
@@ -14,15 +14,15 @@
         android:src="@drawable/a15" />
 
     <RelativeLayout
-        android:id="@+id/rl_login_a"
+        android:id="@+id/rlLoginTop"
         android:layout_width="match_parent"
         android:layout_height="@dimen/comment_edit_height"
-        android:layout_below="@+id/iv_login_icon"
+        android:layout_below="@+id/ivLogin"
         android:layout_marginTop="30dip"
         android:background="@color/white" >
 
         <ImageView
-            android:id="@+id/iv_login_name"
+            android:id="@+id/ivLoginName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -31,16 +31,16 @@
             android:src="@drawable/login_user" />
 
         <EditText
-            android:id="@+id/et_login_name"
+            android:id="@+id/etLoginName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dip"
-            android:layout_toLeftOf="@+id/iv_login_arrow"
-            android:layout_toRightOf="@+id/iv_login_name"
+            android:layout_toLeftOf="@+id/ivLoginArrow"
+            android:layout_toRightOf="@+id/ivLoginName"
             android:background="@null" />
 
         <ImageView
-            android:id="@+id/iv_login_arrow"
+            android:id="@+id/ivLoginArrow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -50,15 +50,15 @@
     </RelativeLayout>
 
     <View
-        android:id="@+id/v_login"
+        android:id="@+id/vLogin"
         style="@style/Style_Line_Ver"
-        android:layout_below="@+id/rl_login_a" />
+        android:layout_below="@+id/rlLoginTop" />
 
     <RelativeLayout
-        android:id="@+id/rl_login_b"
+        android:id="@+id/rlLoginBottom"
         android:layout_width="match_parent"
         android:layout_height="@dimen/comment_edit_height"
-        android:layout_below="@+id/v_login"
+        android:layout_below="@+id/vLogin"
         android:background="@color/white" >
 
         <ImageView
@@ -84,7 +84,7 @@
         android:id="@+id/b_login"
         android:layout_width="match_parent"
         android:layout_height="@dimen/comment_btn_height"
-        android:layout_below="@+id/rl_login_b"
+        android:layout_below="@+id/rlLoginBottom"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dip"

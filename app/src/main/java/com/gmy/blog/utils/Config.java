@@ -83,9 +83,18 @@ public class Config {
 	public static final String PACKAGE_QQ = "tencent.mobileqq";
 	/** qq空间 */
 	public static final String PACKAGE_QZONE = "com.qzone";
+
+	public final static int WHAT_DEFAULT = 0X0000;
+	public final static int WHAT_ONE = 0X0001;
+	public final static int WHAT_TWO = 0X0002;
+	public final static int WHAT_THREE = 0X0003;
+	public final static int WHAT_FOUR = 0X0004;
+	public final static int WHAT_MAX = 0X1001;
 	// http://192.168.191.6:8080/PocketBlog/regist.android_userdo?user_name=gmy&password=123123&email=sdsadasd
 	public static String IP = "http://192.168.0.121:8088/Blog/";
 	// public static String IP = "http://192.168.191.1:8080/Blog/";
+
+
 	public static String URL_LOGIN = IP + "login.android_userdo";// 用户登录
 	public static String URL_CHECKLOGIN = IP + "checkUsername.android_userdo";// 检查用户名是否存在
 	public static String URL_REGIST = IP + "regist.android_userdo";// 注册

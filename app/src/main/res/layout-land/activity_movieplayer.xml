@@ -3,7 +3,7 @@
     android:id="@+id/lay_main"
     android:layout_width="wrap_content"
     android:layout_height="fill_parent"
-    android:background="@drawable/videoplayer_erect_background" >
+    android:background="#000000" >
 
     <io.vov.vitamio.widget.CenterLayout
         android:layout_width="match_parent"
